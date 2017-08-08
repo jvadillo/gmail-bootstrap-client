@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 4 Gmail style client example</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- NavBar -->
+<nav class="navbar navbar-toggleable-md navbar-light">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	<div class="container">
+ <img height="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png">
+ <a class="navbar-brand" href="#">&nbsp;&nbsp;Bootstrap v4</a>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <form class="form-inline my-2 my-lg-0">
+   <div class="btn-group" role="group">
+    <input class="form-control ml-sm-4" type="text" placeholder="Search">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+   </div>
+  </form>
+  <ul class="navbar-nav ml-auto">
+
+   <li class="nav-item active">
+    <a class="nav-link" href="#">&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;</a>
+   </li>
+   <li class="nav-item active">
+    <a class="nav-link" href="#">&nbsp;<i class="fa fa-th" aria-hidden="true"></i>&nbsp;</a>
+   </li>
+   <li class="nav-item active">
+    <a class="nav-link" href="#">vadillo.jon@gmail.com <span class="sr-only">(current)</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+   </li>
+  </ul>
+ </div>
+	</div>
+</nav>
+<!-- END: NavBar -->
+
+<div class="container">
+ <div class="row">
+  <!-- First row -->
+  <div class="col-12 col-sm-12 col-md-3 col-lg-2">
+   <!-- Left column (First row) -->
+   <a href="#" class="btn btn-danger btn-primary btn-block">
+    <i class="fa fa-edit"></i> Compose
+   </a>
+  </div>
+  <div class="col-12 col-sm-12 col-md-9 col-lg-10">
+   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;</button>
+    <button type="button" class="btn btn-secondary">&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;</button>
+   </div>
+   <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					More
+				</button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+     <a class="dropdown-item" href="#">Action</a>
+     <a class="dropdown-item" href="#">Another action</a>
+     <a class="dropdown-item" href="#">Something else here</a>
+     <div class="dropdown-divider"></div>
+     <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+   </div>
+
+   <!-- Right side buttons -->
+   <div class="pull-right">
+    <button type="button" class="btn btn-secondary">&nbsp;<i class="fa fa-cog" aria-hidden="true"></i>&nbsp;</button>
+    <button type="button" class="btn btn-secondary">&nbsp;<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;</button>
+   </div>
+   <!-- END: Right side buttons -->
+  </div>
+  <!-- END: Right column -->
+
+ </div>
+ <!-- END: first row -->
+ <hr>
+ <div class="row">
+  <!-- Sencond row -->
+  <div class="col-12 col-sm-12 col-md-3 col-lg-2">
+   <!-- LEFT COLUMN Menu (Sencond row) -->
+   <ul class="list-group">
+    <!-- Menu -->
+
+    <li class="list-group-item justify-content-between active">
+     Inbox
+    </li>
+    <li class="list-group-item justify-content-between">
+     Important
+     <span class="badge badge-default badge-pill">2</span>
+    </li>
+    <li class="list-group-item justify-content-between">
+     Sent
+     <span class="badge badge-default badge-pill">1</span>
+    </li>
+    <li class="list-group-item justify-content-between">
+     Spam
+     <span class="badge badge-default badge-pill">1</span>
+    </li>
+   </ul>
+   <!-- End left menu -->
+  </div>
+  <!-- END: Left column (Second row) -->
+  <div class="col-12 col-sm-12 col-md-9 col-lg-10">
+   <!-- Tabs -->
+   <ul class="nav nav-tabs">
+    <li class="nav-item">
+     <a class="nav-link active" href="#"><i class="fa fa-inbox"></i>&nbsp;&nbsp;Inbox</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;Social</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#"><i class="fa fa-tags"></i>&nbsp;&nbsp;Notifications</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Updates</a>
+    </li>
+   </ul>
+   <!-- END: Tabs -->
+   <div class="list-group">
+
+    <li class="list-group-item d-flex justify-content-start">
+     <div class="checkbox">
+      <input type="checkbox">
+     </div>
+
+     &nbsp;&nbsp;<span class="fa fa-star-o"></span>&nbsp;&nbsp;
+     <span class="name fullname">Jon Markus</span>
+     <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+     <span class="ml-auto p-2">
+						<span class="fa fa-paperclip"></span>
+     <span class="badge badge-default badge-pill">08:05</span>
+     </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+     <div class="checkbox">
+      <input type="checkbox">
+     </div>
+
+     &nbsp;&nbsp;<span class="fa fa-star-o"></span>&nbsp;&nbsp;
+     <span class="name fullname">Jon Markus</span>
+     <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+     <span class="ml-auto p-2">
+						<span class="fa fa-paperclip"></span>
+     <span class="badge badge-default badge-pill">21:45</span>
+     </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+     <div class="checkbox">
+      <input type="checkbox">
+     </div>
+
+     &nbsp;&nbsp;<span class="fa fa-star-o"></span>&nbsp;&nbsp;
+     <span class="name fullname">Jon Markus</span>
+     <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+     <span class="ml-auto p-2">
+						<span class="fa fa-paperclip"></span>
+     <span class="badge badge-default badge-pill">09:22</span>
+     </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+     <div class="checkbox">
+      <input type="checkbox">
+     </div>
+
+     &nbsp;&nbsp;<span class="fa fa-star-o"></span>&nbsp;&nbsp;
+     <span class="name fullname">Jon Markus</span>
+     <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+     <span class="ml-auto p-2">
+						<span class="fa fa-paperclip"></span>
+     <span class="badge badge-default badge-pill">10:00</span>
+     </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+     <div class="checkbox">
+      <input type="checkbox">
+     </div>
+
+     &nbsp;&nbsp;<span class="fa fa-star-o"></span>&nbsp;&nbsp;
+     <span class="name fullname">Jon Markus</span>
+     <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+     <span class="ml-auto p-2">
+						<span class="fa fa-paperclip"></span>
+     <span class="badge badge-default badge-pill">18:25</span>
+     </span>
+    </li>
+   </div>
+  </div>
+ </div>
+ <!-- END: Second row -->
+</div>
+<!-- END: container -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+  
+</body>
+</html>
